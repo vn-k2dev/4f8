@@ -7,7 +7,6 @@
   <title>Style a Blog Post with CSS: beginner-friendly tutorial</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css" />
-  <link rel="preconnect" href="https://files.f8.edu.vn" />
   <style>
     body {
       margin: 0;
@@ -518,27 +517,6 @@ footer p {
     Feel free to experiment with different styles, add more sections, and make your blog post truly unique. Happy
     coding!
   </p>
-  <figure>
-    <img src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_0_260323080636_69c0921c0cf292.71514803.png"
-      alt="ES2025 tập trung vào iterator, set, và async - không phải pipeline operator như nhiều bài viết nhầm" />
-    <figcaption>
-      <em>ES2025 tập trung vào iterator, set, và async - không phải pipeline operator như nhiều bài viết nhầm</em>
-    </figcaption>
-  </figure>
-
-  <pre><code class="language-javascript">// Trước ES2025 - load cả mảng vào memory
-const result = apiData
-  .filter(item => item.active)
-  .map(item => item.name)
-  .slice(0, 100);
-
-// ES2025 - lazy evaluation, chỉ xử lý đến khi đủ 100 item
-const result = Iterator.from(apiData)
-  .filter(item => item.active)
-  .map(item => item.name)
-  .take(100)
-  .toArray();</code></pre>
-
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
