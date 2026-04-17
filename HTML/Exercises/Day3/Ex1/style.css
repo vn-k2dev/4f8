@@ -1,30 +1,39 @@
-/* Tất cả link trong menu điều hướng (kể cả submenu) có màu #1d4ed8 */
-nav li a {
-    color: #1d4ed8;
+nav {
+
+    /* Tất cả link trong menu điều hướng (kể cả submenu) có màu #1d4ed8 */
+    li a {
+        color: #1d4ed8;
+    }
+
+    /* Chỉ các mục menu cấp 1 (không tính submenu) có nền #f1f5f9 */
+    &>ul>li>a {
+        color: #f1f5f9;
+    }
 }
 
-/* Chỉ các mục menu cấp 1 (không tính submenu) có nền #f1f5f9 */
-nav>ul>li>a {
-    color: #f1f5f9;
+
+h2 {
+
+    /* Đoạn văn đầu tiên ngay sau mỗi tiêu đề h2 trong nội dung bài viết có màu #64748b */
+    &+p {
+        color: #64748b !important;
+    }
+
+    /* Tất cả đoạn văn nằm sau tiêu đề h2 (không cần liền kề) có màu #0f172a */
+    &~p {
+        color: #0f172a;
+    }
 }
 
-/* Đoạn văn đầu tiên ngay sau mỗi tiêu đề h2 trong nội dung bài viết có màu #64748b */
-h2+p {
-    color: #64748b !important;
-}
-
-/* Tất cả đoạn văn nằm sau tiêu đề h2 (không cần liền kề) có màu #0f172a */
-h2~p {
-    color: #0f172a;
-}
-
-/* Link tác giả trong phần thông tin bài viết có màu #f97316 */
-.author>a {
-    color: #f97316;
-}
 
 /* Sử dụng CSS Nesting (với ký hiệu &) để viết style cho bài viết: */
 .post {
+
+    /* Link tác giả trong phần thông tin bài viết có màu #f97316 */
+    .author>a {
+        color: #f97316;
+    }
+
     /* Bài viết có nền white */
     background-color: white;
 
