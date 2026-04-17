@@ -101,7 +101,7 @@ h2~p {
 button {
 
     /* Nút chính có nền #2563eb, chữ white */
-    &.btn-primary {
+    &.btn.btn-primary {
         background-color: #2563eb;
         color: white;
     }
