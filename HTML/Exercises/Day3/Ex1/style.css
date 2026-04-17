@@ -19,7 +19,7 @@ h2 {
     }
     /* Đoạn văn đầu tiên ngay sau mỗi tiêu đề h2 trong nội dung bài viết có màu #64748b */
     &+p {
-        color: #64748b !important;
+        color: #64748b;
     }
 
 }
